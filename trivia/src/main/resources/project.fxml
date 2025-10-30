@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Trivia Game" textAlignment="CENTER" wrappingWidth="236.53668516874313">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+      <TextField fx:id="comments" alignment="CENTER" prefHeight="31.0" prefWidth="600.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="question" prefHeight="62.0" prefWidth="600.0" />
+      <RadioButton fx:id="answer1" mnemonicParsing="false" onAction="#answer1Press" prefHeight="42.0" prefWidth="301.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="answer" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="answer2" mnemonicParsing="false" onAction="#answer2Press" prefHeight="43.0" prefWidth="300.0" toggleGroup="$answer" />
+      <RadioButton fx:id="answer3" mnemonicParsing="false" onAction="#answer3Press" prefHeight="43.0" prefWidth="298.0" toggleGroup="$answer" />
+      <RadioButton fx:id="answer4" mnemonicParsing="false" onAction="#answer4Press" prefHeight="43.0" prefWidth="300.0" toggleGroup="$answer" />
+      <Button mnemonicParsing="false" onAction="#OKPress" prefHeight="41.0" prefWidth="62.0" text="OK" />
+      <HBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#startGamePress" prefHeight="26.0" prefWidth="131.0" text="Start Game" />
+            <Button mnemonicParsing="false" onAction="#endGmePress" prefHeight="26.0" prefWidth="131.0" text="End Game" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
