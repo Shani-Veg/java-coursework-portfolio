@@ -8,8 +8,7 @@ A simple generic Set-like implementation demonstrating generics, collection oper
 **Status:** Built earlier and worked at submission time; not re-run on this machine now.
 
 ## Project Structure
-
-
+```
 generic-set/
 ├─ src/main/java/
 │  ├─ SetList.java        # Core Set implementation (no duplicates)
@@ -17,8 +16,7 @@ generic-set/
 │  ├─ MakePerson.java     # Helpers to create sample data (optional)
 │  ├─ Method.java         # Utility methods (optional)
 │  └─ MakeSet.java        # Small demo / entry point (has main)
-
-
+```
 
 ## Highlights
 - Type-safe **generics** (`Set<T>`-like API)
@@ -43,3 +41,4 @@ generic-set/
 ## License
 MIT (see repository root).
 ```
+
