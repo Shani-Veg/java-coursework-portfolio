@@ -1,5 +1,4 @@
 
-```
 # Generic Set (Java)
 
 A simple generic Set-like implementation demonstrating generics, collection operations, and iteration.
@@ -41,4 +40,3 @@ generic-set/
 ## License
 MIT (see repository root).
 ```
-
