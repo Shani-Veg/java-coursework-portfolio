@@ -70,16 +70,18 @@ public class SetList<E>{
     }
 
     public String toString() {
+        StringBuilder sb = new StringBuilder("{");
         Iterator<E> iterator = setList.iterator();
-        String setString = "{";
-        while (iterator.hasNext()){
-            setString += iterator.next() + ", ";
+        
+        while (iterator.hasNext()) {
+            sb.append(iterator.next());
+            if (iterator.hasNext()) {
+                sb.append(", ");
+            }
         }
-        if (setString.length() > 1) {
-            setString = setString.substring(0, setString.length() - 2);
-        }
-        setString += "}";
-        return setString;
+        
+        sb.append("}");
+        return sb.toString();
     }
 
 
