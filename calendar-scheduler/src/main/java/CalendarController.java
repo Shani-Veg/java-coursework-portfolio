@@ -148,10 +148,11 @@ public class CalendarController {
      * @param event The action event triggered by a button click.
      */
     private void handleButton(ActionEvent event) {
-        Button tempButton = (Button) event.getSource(); // Get the button that was clicked.
-        date = Integer.parseInt(tempButton.getText()); // Extract the day number.
-        showDialog(yearNum, monthNum, date); // Show the appointment dialog.
-    }
+    Button tempButton = (Button) event.getSource(); 
+    if (tempButton.getText().isEmpty()) return; 
+    date = Integer.parseInt(tempButton.getText()); 
+    showDialog(yearNum, monthNum, date); 
+}
 
     /**
      * Displays a dialog box for viewing or editing appointments for a specific day.
